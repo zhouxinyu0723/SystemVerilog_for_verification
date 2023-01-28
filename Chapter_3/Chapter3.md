@@ -17,7 +17,7 @@ my_task(my_array, my_address);
 ```
 #### e. Create my_task() that takes two inputs: a constant 512-element integer array passed by reference, and a 9-bit address. The task calls a function, print_int(), and passes the array element indexed by the address, pre-decrementing the address.
 ```
-function void my_task(ref integer arg_array[512], ref bit[8:0] arg_address)
+function void my_task(ref integer arg_array[512], ref bit[8:0] arg_address);
     arg_address = arg_address - 1;
     $display("%d", arg_array[arg_address]);
 endfunction

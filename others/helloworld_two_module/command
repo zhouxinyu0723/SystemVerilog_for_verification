@@ -1,0 +1,5 @@
+verilator --binary -j 0 -Wall helloWorld.sv
+cd obj_dir
+./VhelloWorld
+
+documentation: https://veripool.org/verilator/documentation/
